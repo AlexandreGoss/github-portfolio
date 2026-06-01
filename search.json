@@ -14,6 +14,34 @@
     "text": "About this site"
   },
   {
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Alexandre Gosset",
+    "section": "",
+    "text": "I am a final-year Master’s student in Bioinformatics, currently completing my end-of-studies internship at the Centre d’Anthropobiologie et de Génomique de Toulouse (CAGT). I specialize in genomic data analysis and the design of highly reproducible workflows.\nI am actively seeking a position (Fixed-term, Permanent, or Research Engineer) in the Montpellier and Sète area starting in September 2026. I have a strong background in building robust architectures for evolutionary analysis, population genomics, and structural modeling."
+  },
+  {
+    "objectID": "en/index.html#about-me",
+    "href": "en/index.html#about-me",
+    "title": "Alexandre Gosset",
+    "section": "",
+    "text": "I am a final-year Master’s student in Bioinformatics, currently completing my end-of-studies internship at the Centre d’Anthropobiologie et de Génomique de Toulouse (CAGT). I specialize in genomic data analysis and the design of highly reproducible workflows.\nI am actively seeking a position (Fixed-term, Permanent, or Research Engineer) in the Montpellier and Sète area starting in September 2026. I have a strong background in building robust architectures for evolutionary analysis, population genomics, and structural modeling."
+  },
+  {
+    "objectID": "en/index.html#core-competencies",
+    "href": "en/index.html#core-competencies",
+    "title": "Alexandre Gosset",
+    "section": "Core Competencies",
+    "text": "Core Competencies\n\nPipelines & Reproducibility: Snakemake, Git/GitHub workflows\nGenomics & Bioinformatics: GLIMPSE2, ANGSD, GROMACS\nProgramming & Systems: Python (NumPy, Pandas), R, Advanced Linux Administration"
+  },
+  {
+    "objectID": "en/projects.html",
+    "href": "en/projects.html",
+    "title": "Projects & Portfolio",
+    "section": "",
+    "text": "Welcome to my technical portfolio. Below is an overview of my recent work in bioinformatics and software development.\n\nGenomics & PipelinesStructural ModelingSoftware Development\n\n\n\nLarge-Scale Genomic Imputation Architecture\n\nTools: Snakemake, GLIMPSE2, ANGSD, Linux\nContext: Developed during my internship at CAGT.\nDescription: Design and deployment of a large-scale data processing workflow to ensure reproducibility in complex genomic analyses. The pipeline integrates advanced imputation and population genomics tools within a robust Linux environment.\n\n\n\n\n\nSynaptic Signaling Pathways\n\nTools: Python, Ordinary Differential Equations (ODEs)\nDescription: Mathematical modeling of signaling pathways using ODEs, with a strong focus on computational neuroscience and systems biology approaches.\n\n\n\n\n\nGame Prototyping & Modding\n\nTools: Godot Engine, Blockbench, Custom Scripts\nDescription: Development of game logic, physics engine management, and advanced mod creation. Projects include a custom cartomancy mod featuring complex projectile systems and 3D modeling."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Alexandre Gosset",
