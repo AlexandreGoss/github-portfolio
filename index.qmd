@@ -1,7 +1,28 @@
 ---
-title: "portfolio-bioinfo"
+title: "Alexandre Gosset"
+image: assets/profile.png # Mets une photo de toi pro dans le dossier du projet
+about:
+  template: trestles # C'est le nom du template (image à gauche, texte à droite)
+  image-shape: rounded
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/alexandre-gosset-22b02024b/
+    - icon: github
+      text: GitHub
+      href: https://github.com/AlexandreGoss
+    - icon: file-earmark-pdf
+      text: CV Académique
+      href: assets/CV_Academique_FR.pdf 
 ---
 
-This is a Quarto website.
+## À propos
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Ingénieur bio-informaticien spécialisé dans l'analyse de données génomiques et la conception de pipelines reproductibles. 
+
+Bientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d'Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J'ai un attrait particulier pour la mise en place d'architectures robustes d'analyse évolutive et phylogénétique.
+
+## Compétences clés
+* **Pipelines & Reproductibilité :** Snakemake, GitHub
+* **Génomique :** GLIMPSE2, ANGSD
+* **Programmation & Systèmes :** Python (NumPy, Pandas), R, Administration Linux

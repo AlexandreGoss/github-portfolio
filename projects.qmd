@@ -1,0 +1,22 @@
+---
+title: "Mes Projets"
+---
+
+Bienvenue sur mon portfolio technique. Voici un aperçu de mes travaux récents.
+
+::: {.panel-tabset}
+
+## Génomique & Pipelines
+
+### Architecture d'imputation génomique
+* **Outils :** Snakemake, GLIMPSE2, Linux
+* **Description :** Conception d'un workflow de traitement à grande échelle pour garantir la reproductibilité des analyses complexes...
+*(Ici, tu pourras insérer le graphe DAG généré par ton pipeline).*
+
+## Développement Logiciel
+
+### Prototypage et Modding
+* **Outils :** Godot, Blockbench, Scripts personnalisés
+* **Description :** Développement de logiques de jeu, gestion de moteurs physiques et création de mods avancés (systèmes de projectiles, modélisation 3D)...
+
+:::
