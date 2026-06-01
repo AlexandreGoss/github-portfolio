@@ -1,0 +1,28 @@
+---
+title: "Projects & Portfolio"
+---
+
+Welcome to my technical portfolio. Below is an overview of my recent work in bioinformatics and software development.
+
+::: {.panel-tabset}
+
+## Genomics & Pipelines
+
+### Large-Scale Genomic Imputation Architecture
+* **Tools:** Snakemake, GLIMPSE2, ANGSD, Linux
+* **Context:** Developed during my internship at CAGT.
+* **Description:** Design and deployment of a large-scale data processing workflow to ensure reproducibility in complex genomic analyses. The pipeline integrates advanced imputation and population genomics tools within a robust Linux environment.
+
+## Structural Modeling
+
+### Synaptic Signaling Pathways
+* **Tools:** Python, Ordinary Differential Equations (ODEs)
+* **Description:** Mathematical modeling of signaling pathways using ODEs, with a strong focus on computational neuroscience and systems biology approaches.
+
+## Software Development
+
+### Game Prototyping & Modding
+* **Tools:** Godot Engine, Blockbench, Custom Scripts
+* **Description:** Development of game logic, physics engine management, and advanced mod creation. Projects include a custom cartomancy mod featuring complex projectile systems and 3D modeling.
+
+:::

@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - "assets/"
 
 website:
   title: "Alexandre Gosset"
@@ -10,6 +12,14 @@ website:
       - href: projects.qmd
         text: Projets
     right:
+      # --- LE BOUTON DE SWITCH DE LANGUE EST ICI ---
+      - text: "🌍 Langues"
+        menu:
+          - text: "🇫🇷 Français"
+            href: /index.qmd
+          - text: "🇬🇧 English"
+            href: /en/index.qmd
+      # ---------------------------------------------
       - icon: github
         href: https://github.com/AlexandreGoss
       - icon: linkedin
@@ -18,7 +28,6 @@ website:
 format:
   html:
     theme:
-      light: cosmo      # Un thème clair, très propre et pro
-      dark: darkly      # Le mode sombre qui s'activera automatiquement
-    css: styles.css
-    toc: true           # Ajoute un sommaire sur le côté pour les longs articles
+      light: cosmo
+      dark: darkly
+    toc: true

@@ -1,0 +1,28 @@
+---
+title: "Alexandre Gosset"
+image: ../assets/profile.jpg
+about:
+  template: trestles
+  image-shape: rounded
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/alexandre-gosset-22b02024b/
+    - icon: github
+      text: GitHub
+      href: https://github.com/AlexandreGoss
+    - icon: file-earmark-pdf
+      text: Academic Resume
+      href: ../assets/CV_Academic_EN.pdf
+---
+
+## About Me
+
+I am a final-year Master's student in Bioinformatics, currently completing my end-of-studies internship at the Centre d'Anthropobiologie et de Génomique de Toulouse (CAGT). I specialize in genomic data analysis and the design of highly reproducible workflows.
+
+I am actively seeking a position (Fixed-term, Permanent, or Research Engineer) in the **Montpellier and Sète area** starting in **September 2026**. I have a strong background in building robust architectures for evolutionary analysis, population genomics, and structural modeling.
+
+## Core Competencies
+* **Pipelines & Reproducibility:** Snakemake, Git/GitHub workflows
+* **Genomics & Bioinformatics:** GLIMPSE2, ANGSD, GROMACS
+* **Programming & Systems:** Python (NumPy, Pandas), R, Advanced Linux Administration
