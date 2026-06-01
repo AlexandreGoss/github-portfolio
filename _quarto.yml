@@ -11,9 +11,9 @@ website:
         text: Projets
     right:
       - icon: github
-        href: https://github.com/ton-pseudo
+        href: https://github.com/AlexandreGoss
       - icon: linkedin
-        href: https://linkedin.com/in/ton-profil
+        href: https://www.linkedin.com/in/alexandre-gosset-22b02024b/
 
 format:
   html:
