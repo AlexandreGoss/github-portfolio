@@ -7,17 +7,19 @@ website:
   title: "Alexandre Gosset"
   navbar:
     left:
-      - href: index.qmd
-        text: Accueil
-      - href: projects.qmd
-        text: Projets
-    right:
-      - text: "🌍 Langues"
+      - text: "🇫🇷 Français"
         menu:
-          - text: "🇫🇷 Français"
-            href: https://AlexandreGoss.github.io/github-portfolio/
-          - text: "🇬🇧 English"
-            href: https://AlexandreGoss.github.io/github-portfolio/en/
+          - text: "Accueil"
+            href: index.qmd
+          - text: "Projets"
+            href: projects.qmd
+      - text: "🇬🇧 English"
+        menu:
+          - text: "Home"
+            href: en/index.qmd
+          - text: "Projects"
+            href: en/projects.qmd
+    right:
       - icon: github
         href: https://github.com/AlexandreGoss
       - icon: linkedin
