@@ -1,6 +1,6 @@
 ---
 title: "Alexandre Gosset"
-image: ../assets/profile.jpg
+image: profile.png
 about:
   template: trestles
   image-shape: rounded
@@ -13,7 +13,7 @@ about:
       href: https://github.com/AlexandreGoss
     - icon: file-earmark-pdf
       text: Academic Resume
-      href: ../assets/CV_Academic_EN.pdf
+      href: https://AlexandreGoss.github.io/github-portfolio/assets/CV_Academic_EN.pdf
 ---
 
 ## About Me

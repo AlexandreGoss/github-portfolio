@@ -14,34 +14,6 @@
     "text": "About this site"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Alexandre Gosset",
-    "section": "",
-    "text": "Ingénieur bio-informaticien spécialisé dans l’analyse de données génomiques et la conception de pipelines reproductibles.\nBientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d’Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J’ai un attrait particulier pour la mise en place d’architectures robustes d’analyse évolutive et phylogénétique."
-  },
-  {
-    "objectID": "index.html#à-propos",
-    "href": "index.html#à-propos",
-    "title": "Alexandre Gosset",
-    "section": "",
-    "text": "Ingénieur bio-informaticien spécialisé dans l’analyse de données génomiques et la conception de pipelines reproductibles.\nBientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d’Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J’ai un attrait particulier pour la mise en place d’architectures robustes d’analyse évolutive et phylogénétique."
-  },
-  {
-    "objectID": "index.html#compétences-clés",
-    "href": "index.html#compétences-clés",
-    "title": "Alexandre Gosset",
-    "section": "Compétences clés",
-    "text": "Compétences clés\n\nPipelines & Reproductibilité : Snakemake, GitHub\nGénomique : GLIMPSE2, ANGSD\nProgrammation & Systèmes : Python (NumPy, Pandas), R, Administration Linux"
-  },
-  {
-    "objectID": "en/projects.html",
-    "href": "en/projects.html",
-    "title": "Projects & Portfolio",
-    "section": "",
-    "text": "Welcome to my technical portfolio. Below is an overview of my recent work in bioinformatics and software development.\n\nGenomics & PipelinesStructural ModelingSoftware Development\n\n\n\nLarge-Scale Genomic Imputation Architecture\n\nTools: Snakemake, GLIMPSE2, ANGSD, Linux\nContext: Developed during my internship at CAGT.\nDescription: Design and deployment of a large-scale data processing workflow to ensure reproducibility in complex genomic analyses. The pipeline integrates advanced imputation and population genomics tools within a robust Linux environment.\n\n\n\n\n\nSynaptic Signaling Pathways\n\nTools: Python, Ordinary Differential Equations (ODEs)\nDescription: Mathematical modeling of signaling pathways using ODEs, with a strong focus on computational neuroscience and systems biology approaches.\n\n\n\n\n\nGame Prototyping & Modding\n\nTools: Godot Engine, Blockbench, Custom Scripts\nDescription: Development of game logic, physics engine management, and advanced mod creation. Projects include a custom cartomancy mod featuring complex projectile systems and 3D modeling."
-  },
-  {
     "objectID": "en/index.html",
     "href": "en/index.html",
     "title": "Alexandre Gosset",
@@ -61,5 +33,33 @@
     "title": "Alexandre Gosset",
     "section": "Core Competencies",
     "text": "Core Competencies\n\nPipelines & Reproducibility: Snakemake, Git/GitHub workflows\nGenomics & Bioinformatics: GLIMPSE2, ANGSD, GROMACS\nProgramming & Systems: Python (NumPy, Pandas), R, Advanced Linux Administration"
+  },
+  {
+    "objectID": "en/projects.html",
+    "href": "en/projects.html",
+    "title": "Projects & Portfolio",
+    "section": "",
+    "text": "Welcome to my technical portfolio. Below is an overview of my recent work in bioinformatics and software development.\n\nGenomics & PipelinesStructural ModelingSoftware Development\n\n\n\nLarge-Scale Genomic Imputation Architecture\n\nTools: Snakemake, GLIMPSE2, ANGSD, Linux\nContext: Developed during my internship at CAGT.\nDescription: Design and deployment of a large-scale data processing workflow to ensure reproducibility in complex genomic analyses. The pipeline integrates advanced imputation and population genomics tools within a robust Linux environment.\n\n\n\n\n\nSynaptic Signaling Pathways\n\nTools: Python, Ordinary Differential Equations (ODEs)\nDescription: Mathematical modeling of signaling pathways using ODEs, with a strong focus on computational neuroscience and systems biology approaches.\n\n\n\n\n\nGame Prototyping & Modding\n\nTools: Godot Engine, Blockbench, Custom Scripts\nDescription: Development of game logic, physics engine management, and advanced mod creation. Projects include a custom cartomancy mod featuring complex projectile systems and 3D modeling."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alexandre Gosset",
+    "section": "",
+    "text": "Ingénieur bio-informaticien spécialisé dans l’analyse de données génomiques et la conception de pipelines reproductibles.\nBientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d’Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J’ai un attrait particulier pour la mise en place d’architectures robustes d’analyse évolutive et phylogénétique."
+  },
+  {
+    "objectID": "index.html#à-propos",
+    "href": "index.html#à-propos",
+    "title": "Alexandre Gosset",
+    "section": "",
+    "text": "Ingénieur bio-informaticien spécialisé dans l’analyse de données génomiques et la conception de pipelines reproductibles.\nBientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d’Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J’ai un attrait particulier pour la mise en place d’architectures robustes d’analyse évolutive et phylogénétique."
+  },
+  {
+    "objectID": "index.html#compétences-clés",
+    "href": "index.html#compétences-clés",
+    "title": "Alexandre Gosset",
+    "section": "Compétences clés",
+    "text": "Compétences clés\n\nPipelines & Reproductibilité : Snakemake, GitHub\nGénomique : GLIMPSE2, ANGSD\nProgrammation & Systèmes : Python (NumPy, Pandas), R, Administration Linux"
   }
 ]

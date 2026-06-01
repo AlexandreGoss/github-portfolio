@@ -12,14 +12,12 @@ website:
       - href: projects.qmd
         text: Projets
     right:
-      # --- LE BOUTON DE SWITCH DE LANGUE EST ICI ---
       - text: "🌍 Langues"
         menu:
           - text: "🇫🇷 Français"
-            href: /index.qmd
+            href: https://AlexandreGoss.github.io/github-portfolio/
           - text: "🇬🇧 English"
-            href: /en/index.qmd
-      # ---------------------------------------------
+            href: https://AlexandreGoss.github.io/github-portfolio/en/
       - icon: github
         href: https://github.com/AlexandreGoss
       - icon: linkedin

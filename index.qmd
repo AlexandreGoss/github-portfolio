@@ -13,7 +13,7 @@ about:
       href: https://github.com/AlexandreGoss
     - icon: file-earmark-pdf
       text: CV Académique
-      href: assets/CV_Academique_FR.pdf 
+      href: https://AlexandreGoss.github.io/github-portfolio/assets/CV_Academique_FR.pdf
 ---
 
 ## À propos
