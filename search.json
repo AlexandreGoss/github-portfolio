@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Mes Projets",
+    "section": "",
+    "text": "Bienvenue sur mon portfolio technique. Voici un aperçu de mes travaux récents.\n\nGénomique & PipelinesDéveloppement Logiciel\n\n\n\nArchitecture d’imputation génomique\n\nOutils : Snakemake, GLIMPSE2, Linux\nDescription : Conception d’un workflow de traitement à grande échelle pour garantir la reproductibilité des analyses complexes… (Ici, tu pourras insérer le graphe DAG généré par ton pipeline).\n\n\n\n\n\nPrototypage et Modding\n\nOutils : Godot, Blockbench, Scripts personnalisés\nDescription : Développement de logiques de jeu, gestion de moteurs physiques et création de mods avancés (systèmes de projectiles, modélisation 3D)…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alexandre Gosset",
+    "section": "",
+    "text": "Ingénieur bio-informaticien spécialisé dans l’analyse de données génomiques et la conception de pipelines reproductibles.\nBientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d’Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J’ai un attrait particulier pour la mise en place d’architectures robustes d’analyse évolutive et phylogénétique."
+  },
+  {
+    "objectID": "index.html#à-propos",
+    "href": "index.html#à-propos",
+    "title": "Alexandre Gosset",
+    "section": "",
+    "text": "Ingénieur bio-informaticien spécialisé dans l’analyse de données génomiques et la conception de pipelines reproductibles.\nBientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d’Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J’ai un attrait particulier pour la mise en place d’architectures robustes d’analyse évolutive et phylogénétique."
+  },
+  {
+    "objectID": "index.html#compétences-clés",
+    "href": "index.html#compétences-clés",
+    "title": "Alexandre Gosset",
+    "section": "Compétences clés",
+    "text": "Compétences clés\n\nPipelines & Reproductibilité : Snakemake, GitHub\nGénomique : GLIMPSE2, ANGSD\nProgrammation & Systèmes : Python (NumPy, Pandas), R, Administration Linux"
+  }
+]
