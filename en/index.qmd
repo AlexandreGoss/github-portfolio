@@ -1,6 +1,6 @@
 ---
 title: "Alexandre Gosset"
-image: profile.png
+image: ../assets/profile.png
 about:
   template: trestles
   image-shape: rounded
@@ -12,17 +12,36 @@ about:
       text: GitHub
       href: https://github.com/AlexandreGoss
     - icon: file-earmark-pdf
-      text: Academic Resume
+      text: Academic CV
       href: https://AlexandreGoss.github.io/github-portfolio/assets/CV_Academic_EN.pdf
 ---
 
-## About Me
+## About
 
-I am a final-year Master's student in Bioinformatics, currently completing my end-of-studies internship at the Centre d'Anthropobiologie et de Génomique de Toulouse (CAGT). I specialize in genomic data analysis and the design of highly reproducible workflows.
+Currently completing the final year of my Master's degree in Bioinformatics at the 
+University of Nantes, I am finishing my end-of-studies internship at the Centre 
+d'Anthropobiologie et de Génomique de Toulouse (CAGT).
 
-I am actively seeking a position (Fixed-term, Permanent, or Research Engineer) in the **Montpellier and Sète area** starting in **September 2026**. I have a strong background in building robust architectures for evolutionary analysis, population genomics, and structural modeling.
+My ambition: **designing and developing robust software tools** in service of biology 
+and clinical research. I specialise in highly reproducible data processing architectures 
+(Snakemake/SLURM pipelines) and the integration of Machine Learning and Deep Learning 
+models applied to complex biological problems.
 
-## Core Competencies
-* **Pipelines & Reproducibility:** Snakemake, Git/GitHub workflows
-* **Genomics & Bioinformatics:** GLIMPSE2, ANGSD, GROMACS
-* **Programming & Systems:** Python (NumPy, Pandas), R, Advanced Linux Administration
+From ancient DNA to computational modelling of synaptic plasticity, my experiences 
+have built a **strong interdisciplinary flexibility**: I adapt quickly to new biological 
+domains while bringing solid expertise in software engineering and data analysis.
+
+Graduating at the end of 2026, I am open to opportunities as a Research Engineer, 
+fixed-term or permanent contract.
+
+## Expertise & Technologies
+
+**Architecture & Reproducibility:** [Snakemake]{.badge .bg-secondary} [SLURM]{.badge .bg-secondary} [Git/GitHub]{.badge .bg-secondary} [Linux]{.badge .bg-secondary}
+
+**Genomics & Simulation:** [GLIMPSE2]{.badge .bg-secondary} [ANGSD]{.badge .bg-secondary} [GARGAMMEL]{.badge .bg-secondary}
+
+**Machine Learning & AI:** [XGBoost]{.badge .bg-secondary} [CNN (Unet2D/3D)]{.badge .bg-secondary}
+
+**Modelling & Analysis:** [ODE]{.badge .bg-secondary} [GROMACS]{.badge .bg-secondary} [COPASI]{.badge .bg-secondary}
+
+**Development:** [Python]{.badge .bg-secondary} [R]{.badge .bg-secondary} [C++]{.badge .bg-secondary} [SQL / PHP]{.badge .bg-secondary}

@@ -1,22 +1,122 @@
 ---
-title: "Mes Projets"
+title: "Projets & Portfolio"
 ---
 
-Bienvenue sur mon portfolio technique. Voici un aperçu de mes travaux récents.
+Bienvenue sur mon portfolio technique. Chaque projet reflète une étape de mon parcours, 
+du Master 1 à aujourd'hui — alliant rigueur scientifique et ingénierie logicielle.
 
 ::: {.panel-tabset}
 
-## Génomique & Pipelines
+## 🔬 Stage CAGT (M2)
 
-### Architecture d'imputation génomique
-* **Outils :** Snakemake, GLIMPSE2, Linux
-* **Description :** Conception d'un workflow de traitement à grande échelle pour garantir la reproductibilité des analyses complexes...
-*(Ici, tu pourras insérer le graphe DAG généré par ton pipeline).*
+### aPhenoView : Pipeline d'Imputation Génomique sur ADN Ancien
 
-## Développement Logiciel
+Développé au sein du Centre d'Anthropobiologie et de Génomique de Toulouse (CAGT), 
+aPhenoView est un workflow de traitement à grande échelle dédié à la prédiction de 
+traits phénotypiques (pigmentation, morphologie crânio-faciale) à partir d'échantillons 
+d'ADN ancien (aDNA). Entièrement intégré aux gestionnaires de clusters HPC (SLURM), 
+il garantit la reproductibilité totale des analyses sur des cohortes de plusieurs centaines 
+d'individus.
 
-### Prototypage et Modding
-* **Outils :** Godot, Blockbench, Scripts personnalisés
-* **Description :** Développement de logiques de jeu, gestion de moteurs physiques et création de mods avancés (systèmes de projectiles, modélisation 3D)...
+Ce qui distingue ce projet : un **framework de validation méthodologique original**. 
+En simulant des données aDNA de faible couverture via GARGAMMEL, il devient possible 
+d'entraîner des modèles XGBoost pour quantifier la fiabilité algorithmique de chaque 
+prédiction phénotypique — une approche rarement implémentée dans la littérature.
+
+**Stack Technique :** [Snakemake]{.badge .bg-secondary} [SLURM]{.badge .bg-secondary} [GLIMPSE2]{.badge .bg-secondary} [GARGAMMEL]{.badge .bg-secondary} [XGBoost]{.badge .bg-secondary}
+
+<!-- [📄 Consulter le Rapport de Stage (PDF)](assets/RapportdeStage2026CAGT.pdf){.btn .btn-primary .btn-sm} -->
+[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TON_LIEN_GITHUB_APHENOVIEW){.btn .btn-secondary .btn-sm}
+
+```{mermaid}
+%%| column: screen-inset
+%%| fig-align: center
+
+flowchart LR
+    A[(Alignements aDNA<br>BAM / VCF)]
+
+    A --> B(Indexation & Stats<br>Samtools)
+    B --> C(Appel de Variants<br>ANGSD/BCFTools)
+    C --> D(Extraction des Génotypes)
+
+    D --> E(Traits Phénotypiques)
+    B --> F(Détermination du Sexe)
+    B --> G(Lignées Paternelles<br>Y-Leaf)
+    C --> H(Lignées Maternelles<br>Haplogrep)
+
+    E --> I(Annotation &<br>Fiabilité ML)
+    F --> I
+    G --> I
+    H --> I
+    I --> J{Master Dashboard<br>PDF / HTML}
+
+    classDef base fill:#2b2b2b,stroke:#555,stroke-width:1px,color:#e0e0e0;
+    classDef process fill:#375a7f,stroke:#21364c,stroke-width:2px,color:#ffffff;
+    classDef final fill:#00bc8c,stroke:#007557,stroke-width:2px,color:#ffffff;
+    classDef db fill:#8e44ad,stroke:#5e3370,stroke-width:2px,color:#ffffff;
+
+    class A db;
+    class B,C,D,E,F,G,H,I process;
+    class J final;
+```
+
+## 🧪 Stage IGF (M1)
+
+### Plasticité Synaptique & Neurosciences Computationnelles
+
+Réalisé à l'Institut de Génomique Fonctionnelle (IGF), ce projet consiste en la 
+construction d'un modèle mathématique simulant les interactions entre les voies de 
+signalisation impliquées dans la mémoire et l'apprentissage (PKC, CaMKII, PKA). 
+Le cœur du modèle repose sur un système d'équations différentielles ordinaires (EDO), 
+optimisé via **Numba pour des simulations ~50x plus rapides** sur de longues durées 
+biologiques, complété par une interface graphique interactive pour explorer les 
+paramètres en temps réel.
+
+**Stack Technique :** [Python]{.badge .bg-secondary} [SciPy]{.badge .bg-secondary} [Numba]{.badge .bg-secondary} [IPywidgets]{.badge .bg-secondary}
+
+[📄 Consulter le Rapport de Stage (PDF)](assets/RapportdeStage2025IGF.pdf){.btn .btn-primary .btn-sm}
+
+---
+
+### SigmaView : Détection Automatisée d'Épines Dendritiques en Microscopie 3D
+
+Toujours dans le cadre du stage IGF, SigmaView est un logiciel d'analyse d'imagerie 
+confocale 3D pour la détection automatisée des épines dendritiques naissantes. Face à 
+l'absence d'outils existants adaptés aux contraintes biologiques spécifiques du projet 
+(rapport signal/bruit, morphologie atypique des épines en formation), des algorithmes 
+de segmentation sur mesure ont été conçus de zéro.
+
+**Stack Technique :** [Python]{.badge .bg-secondary} [Traitement d'Image 3D]{.badge .bg-secondary}
+
+[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TON_LIEN_GITHUB_SIGMAVIEW){.btn .btn-secondary .btn-sm}
+
+## 💡 Projets Personnels
+
+### O.R.C.A : Reconnaissance Acoustique des Cétacés par Deep Learning
+
+Projet mené par passion pour la bio-acoustique marine : entraînement et déploiement 
+d'un réseau de neurones convolutifs (CNN) pour la classification automatique des 
+vocalisations de cétacés. Les signaux sonores sont transformés en spectrogrammes 
+mel-fréquence, servant d'entrée au modèle pour identifier les espèces. Le pipeline 
+complet — de la collecte des données audio à l'inférence locale — est autonome et 
+reproductible.
+
+**Stack Technique :** [Python]{.badge .bg-secondary} [Keras]{.badge .bg-secondary} [CNN]{.badge .bg-secondary}
+
+[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TON_LIEN_GITHUB_ORCA){.btn .btn-secondary .btn-sm}
+
+---
+
+### Application de Trading en Temps Réel
+
+Développement d'une application de visualisation des cours des marchés financiers 
+américains en pseudo temps réel, construite autour d'une architecture entièrement 
+asynchrone. Ce projet explore la gestion de flux de données continus via WebSockets, 
+la synchronisation de multiples sources de données et la conception d'interfaces 
+dynamiques à faible latence.
+
+**Stack Technique :** [Python]{.badge .bg-secondary} [WebSockets]{.badge .bg-secondary} [Asyncio]{.badge .bg-secondary}
+
+[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TON_LIEN_GITHUB_TRADING){.btn .btn-secondary .btn-sm}
 
 :::

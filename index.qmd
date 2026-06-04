@@ -1,8 +1,8 @@
 ---
 title: "Alexandre Gosset"
-image: assets/profile.png # Mets une photo de toi pro dans le dossier du projet
+image: assets/profile.png
 about:
-  template: trestles # C'est le nom du template (image à gauche, texte à droite)
+  template: trestles
   image-shape: rounded
   links:
     - icon: linkedin
@@ -17,12 +17,35 @@ about:
 ---
 
 ## À propos
+Étudiant en dernière année de Master Bio-informatique à l'Université de Nantes, 
+je termine actuellement mon stage de fin d'études au Centre d'Anthropobiologie 
+et de Génomique de Toulouse (CAGT).
 
-Ingénieur bio-informaticien spécialisé dans l'analyse de données génomiques et la conception de pipelines reproductibles. 
+Mon ambition : **concevoir et développer des outils logiciels robustes** au service 
+de la biologie et de la recherche clinique. Je me spécialise dans les architectures 
+de traitement de données reproductibles (pipelines Snakemake/SLURM) et l'intégration 
+de modèles Machine Learning et Deep Learning appliqués à des problématiques 
+biologiques complexes.
 
-Bientôt diplômé, je recherche un poste (CDD, CDI ou Ingénieur d'Études) dans les régions de Montpellier et Sète pour la rentrée 2026. J'ai un attrait particulier pour la mise en place d'architectures robustes d'analyse évolutive et phylogénétique.
+De l'ADN ancien à la modélisation de la plasticité synaptique, mes expériences m'ont 
+forgé une **forte flexibilité interdisciplinaire** : je m'adapte rapidement aux 
+spécificités de nouveaux domaines biologiques tout en y apportant une expertise 
+solide en ingénierie logicielle et analyse de données.
 
-## Compétences clés
-* **Pipelines & Reproductibilité :** Snakemake, GitHub
-* **Génomique :** GLIMPSE2, ANGSD
-* **Programmation & Systèmes :** Python (NumPy, Pandas), R, Administration Linux
+Diplômé en fin d'année 2026, je suis ouvert à des opportunités en CDI, CDD ou 
+poste d'Ingénieur d'Études.
+
+---
+
+
+## Domaines d'expertise & Technologies
+
+**Architecture & Reproductibilité :** [Snakemake]{.badge .bg-secondary} [SLURM]{.badge .bg-secondary} [Git/GitHub]{.badge .bg-secondary} [Linux]{.badge .bg-secondary}
+
+**Génomique & Simulation :** [GLIMPSE2]{.badge .bg-secondary} [ANGSD]{.badge .bg-secondary} [GARGAMMEL]{.badge .bg-secondary}
+
+**Machine Learning & IA :** [XGBoost]{.badge .bg-secondary} [CNN (Unet2D/3D)]{.badge .bg-secondary}
+
+**Modélisation & Analyse :** [EDO]{.badge .bg-secondary} [GROMACS]{.badge .bg-secondary} [COPASI]{.badge .bg-secondary}
+
+**Développement :** [Python]{.badge .bg-secondary} [R]{.badge .bg-secondary} [C++]{.badge .bg-secondary} [SQL / PHP]{.badge .bg-secondary}
