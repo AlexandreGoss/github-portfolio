@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mes Projets – Alexandre Gosset</title>
+<title>Projets &amp; Portfolio – Alexandre Gosset</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,8 +68,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -147,11 +151,11 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mes Projets</h1>
+<h1 class="title">Projets &amp; Portfolio</h1>
 </div>
 
 
@@ -168,26 +172,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Bienvenue sur mon portfolio technique. Voici un aperçu de mes travaux récents.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Génomique &amp; Pipelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Développement Logiciel</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="architecture-dimputation-génomique" class="level3">
-<h3 class="anchored" data-anchor-id="architecture-dimputation-génomique">Architecture d’imputation génomique</h3>
-<ul>
-<li><strong>Outils :</strong> Snakemake, GLIMPSE2, Linux</li>
-<li><strong>Description :</strong> Conception d’un workflow de traitement à grande échelle pour garantir la reproductibilité des analyses complexes… <em>(Ici, tu pourras insérer le graphe DAG généré par ton pipeline).</em></li>
-</ul>
+<p>Bienvenue sur mon portfolio technique. Chaque projet reflète une étape de mon parcours, du Master 1 à aujourd’hui — alliant rigueur scientifique et ingénierie logicielle.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset page-columns page-full">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">🔬 Stage CAGT (M2)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">🧪 Stage IGF (M1)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">💡 Projets Personnels</a></li></ul>
+<div class="tab-content page-columns page-full">
+<div id="tabset-1-1" class="tab-pane active page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="aphenoview-pipeline-dimputation-génomique-sur-adn-ancien" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="aphenoview-pipeline-dimputation-génomique-sur-adn-ancien">aPhenoView : Pipeline d’Imputation Génomique sur ADN Ancien</h3>
+<p>Développé au sein du Centre d’Anthropobiologie et de Génomique de Toulouse (CAGT), aPhenoView est un workflow de traitement à grande échelle dédié à la prédiction de traits phénotypiques (pigmentation, morphologie crânio-faciale) à partir d’échantillons d’ADN ancien (aDNA). Entièrement intégré aux gestionnaires de clusters HPC (SLURM), il garantit la reproductibilité totale des analyses sur des cohortes de plusieurs centaines d’individus.</p>
+<p>Ce qui distingue ce projet : un <strong>framework de validation méthodologique original</strong>. En simulant des données aDNA de faible couverture via GARGAMMEL, il devient possible d’entraîner des modèles XGBoost pour quantifier la fiabilité algorithmique de chaque prédiction phénotypique — une approche rarement implémentée dans la littérature.</p>
+<p><strong>Stack Technique :</strong> <span class="badge bg-secondary">Snakemake</span> <span class="badge bg-secondary">SLURM</span> <span class="badge bg-secondary">GLIMPSE2</span> <span class="badge bg-secondary">GARGAMMEL</span> <span class="badge bg-secondary">XGBoost</span></p>
+<!-- [📄 Consulter le Rapport de Stage (PDF)](assets/RapportdeStage2026CAGT.pdf){.btn .btn-primary .btn-sm} -->
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_APHENOVIEW" class="btn btn-secondary btn-sm">🐙 Voir le Code Source sur GitHub</a></p>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display column-screen-inset">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[(Alignements aDNA&lt;br&gt;BAM / VCF)]
+
+    A --&gt; B(Indexation &amp; Stats&lt;br&gt;Samtools)
+    B --&gt; C(Appel de Variants&lt;br&gt;ANGSD/BCFTools)
+    C --&gt; D(Extraction des Génotypes)
+
+    D --&gt; E(Traits Phénotypiques)
+    B --&gt; F(Détermination du Sexe)
+    B --&gt; G(Lignées Paternelles&lt;br&gt;Y-Leaf)
+    C --&gt; H(Lignées Maternelles&lt;br&gt;Haplogrep)
+
+    E --&gt; I(Annotation &amp;&lt;br&gt;Fiabilité ML)
+    F --&gt; I
+    G --&gt; I
+    H --&gt; I
+    I --&gt; J{Master Dashboard&lt;br&gt;PDF / HTML}
+
+    classDef base fill:#2b2b2b,stroke:#555,stroke-width:1px,color:#e0e0e0;
+    classDef process fill:#375a7f,stroke:#21364c,stroke-width:2px,color:#ffffff;
+    classDef final fill:#00bc8c,stroke:#007557,stroke-width:2px,color:#ffffff;
+    classDef db fill:#8e44ad,stroke:#5e3370,stroke-width:2px,color:#ffffff;
+
+    class A db;
+    class B,C,D,E,F,G,H,I process;
+    class J final;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<section id="prototypage-et-modding" class="level3">
-<h3 class="anchored" data-anchor-id="prototypage-et-modding">Prototypage et Modding</h3>
-<ul>
-<li><strong>Outils :</strong> Godot, Blockbench, Scripts personnalisés</li>
-<li><strong>Description :</strong> Développement de logiques de jeu, gestion de moteurs physiques et création de mods avancés (systèmes de projectiles, modélisation 3D)…</li>
-</ul>
+<section id="plasticité-synaptique-neurosciences-computationnelles" class="level3">
+<h3 class="anchored" data-anchor-id="plasticité-synaptique-neurosciences-computationnelles">Plasticité Synaptique &amp; Neurosciences Computationnelles</h3>
+<p>Réalisé à l’Institut de Génomique Fonctionnelle (IGF), ce projet consiste en la construction d’un modèle mathématique simulant les interactions entre les voies de signalisation impliquées dans la mémoire et l’apprentissage (PKC, CaMKII, PKA). Le cœur du modèle repose sur un système d’équations différentielles ordinaires (EDO), optimisé via <strong>Numba pour des simulations ~50x plus rapides</strong> sur de longues durées biologiques, complété par une interface graphique interactive pour explorer les paramètres en temps réel.</p>
+<p><strong>Stack Technique :</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">SciPy</span> <span class="badge bg-secondary">Numba</span> <span class="badge bg-secondary">IPywidgets</span></p>
+<p><a href="assets/RapportdeStage2025IGF.pdf" class="btn btn-primary btn-sm">📄 Consulter le Rapport de Stage (PDF)</a></p>
+<hr>
+</section>
+<section id="sigmaview-détection-automatisée-dépines-dendritiques-en-microscopie-3d" class="level3">
+<h3 class="anchored" data-anchor-id="sigmaview-détection-automatisée-dépines-dendritiques-en-microscopie-3d">SigmaView : Détection Automatisée d’Épines Dendritiques en Microscopie 3D</h3>
+<p>Toujours dans le cadre du stage IGF, SigmaView est un logiciel d’analyse d’imagerie confocale 3D pour la détection automatisée des épines dendritiques naissantes. Face à l’absence d’outils existants adaptés aux contraintes biologiques spécifiques du projet (rapport signal/bruit, morphologie atypique des épines en formation), des algorithmes de segmentation sur mesure ont été conçus de zéro.</p>
+<p><strong>Stack Technique :</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Traitement d’Image 3D</span></p>
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_SIGMAVIEW" class="btn btn-secondary btn-sm">🐙 Voir le Code Source sur GitHub</a></p>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<section id="o.r.c.a-reconnaissance-acoustique-des-cétacés-par-deep-learning" class="level3">
+<h3 class="anchored" data-anchor-id="o.r.c.a-reconnaissance-acoustique-des-cétacés-par-deep-learning">O.R.C.A : Reconnaissance Acoustique des Cétacés par Deep Learning</h3>
+<p>Projet mené par passion pour la bio-acoustique marine : entraînement et déploiement d’un réseau de neurones convolutifs (CNN) pour la classification automatique des vocalisations de cétacés. Les signaux sonores sont transformés en spectrogrammes mel-fréquence, servant d’entrée au modèle pour identifier les espèces. Le pipeline complet — de la collecte des données audio à l’inférence locale — est autonome et reproductible.</p>
+<p><strong>Stack Technique :</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Keras</span> <span class="badge bg-secondary">CNN</span></p>
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_ORCA" class="btn btn-secondary btn-sm">🐙 Voir le Code Source sur GitHub</a></p>
+<hr>
+</section>
+<section id="application-de-trading-en-temps-réel" class="level3">
+<h3 class="anchored" data-anchor-id="application-de-trading-en-temps-réel">Application de Trading en Temps Réel</h3>
+<p>Développement d’une application de visualisation des cours des marchés financiers américains en pseudo temps réel, construite autour d’une architecture entièrement asynchrone. Ce projet explore la gestion de flux de données continus via WebSockets, la synchronisation de multiples sources de données et la conception d’interfaces dynamiques à faible latence.</p>
+<p><strong>Stack Technique :</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">WebSockets</span> <span class="badge bg-secondary">Asyncio</span></p>
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_TRADING" class="btn btn-secondary btn-sm">🐙 Voir le Code Source sur GitHub</a></p>
 </section>
 </div>
 </div>

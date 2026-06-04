@@ -68,8 +68,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -147,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -168,36 +172,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to my technical portfolio. Below is an overview of my recent work in bioinformatics and software development.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Genomics &amp; Pipelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Structural Modeling</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Software Development</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="large-scale-genomic-imputation-architecture" class="level3">
-<h3 class="anchored" data-anchor-id="large-scale-genomic-imputation-architecture">Large-Scale Genomic Imputation Architecture</h3>
-<ul>
-<li><strong>Tools:</strong> Snakemake, GLIMPSE2, ANGSD, Linux</li>
-<li><strong>Context:</strong> Developed during my internship at CAGT.</li>
-<li><strong>Description:</strong> Design and deployment of a large-scale data processing workflow to ensure reproducibility in complex genomic analyses. The pipeline integrates advanced imputation and population genomics tools within a robust Linux environment.</li>
-</ul>
+<p>Welcome to my technical portfolio. Each project reflects a stage of my journey, from Master 1 to today — combining scientific rigour with software engineering.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset page-columns page-full">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">🔬 CAGT Internship (M2)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">🧪 IGF Internship (M1)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">💡 Personal Projects</a></li></ul>
+<div class="tab-content page-columns page-full">
+<div id="tabset-1-1" class="tab-pane active page-columns page-full" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="aphenoview-genomic-imputation-pipeline-for-ancient-dna" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="aphenoview-genomic-imputation-pipeline-for-ancient-dna">aPhenoView: Genomic Imputation Pipeline for Ancient DNA</h3>
+<p>Developed at the Centre d’Anthropobiologie et de Génomique de Toulouse (CAGT), aPhenoView is a large-scale processing workflow dedicated to predicting phenotypic traits (pigmentation, cranio-facial morphology) from ancient DNA (aDNA) samples. Fully integrated with HPC cluster schedulers (SLURM), it ensures complete reproducibility of analyses across cohorts of several hundred individuals.</p>
+<p>What sets this project apart: an <strong>original methodological validation framework</strong>. By simulating low-coverage aDNA data via GARGAMMEL, it becomes possible to train XGBoost models to quantify the algorithmic reliability of each phenotypic prediction — an approach rarely implemented in the literature.</p>
+<p><strong>Tech Stack:</strong> <span class="badge bg-secondary">Snakemake</span> <span class="badge bg-secondary">SLURM</span> <span class="badge bg-secondary">GLIMPSE2</span> <span class="badge bg-secondary">GARGAMMEL</span> <span class="badge bg-secondary">XGBoost</span></p>
+<!-- [📄 View Internship Report (PDF)](assets/RapportdeStage2026CAGT.pdf){.btn .btn-primary .btn-sm} -->
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_APHENOVIEW" class="btn btn-secondary btn-sm">🐙 View Source Code on GitHub</a></p>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display column-screen-inset">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[(aDNA Alignments&lt;br&gt;BAM / VCF)]
+
+    A --&gt; B(Indexing &amp; Stats&lt;br&gt;Samtools)
+    B --&gt; C(Variant Calling&lt;br&gt;ANGSD/BCFTools)
+    C --&gt; D(Genotype Extraction)
+
+    D --&gt; E(Phenotypic Traits)
+    B --&gt; F(Sex Determination)
+    B --&gt; G(Paternal Lineages&lt;br&gt;Y-Leaf)
+    C --&gt; H(Maternal Lineages&lt;br&gt;Haplogrep)
+
+    E --&gt; I(Annotation &amp;&lt;br&gt;ML Reliability)
+    F --&gt; I
+    G --&gt; I
+    H --&gt; I
+    I --&gt; J{Master Dashboard&lt;br&gt;PDF / HTML}
+
+    classDef base fill:#2b2b2b,stroke:#555,stroke-width:1px,color:#e0e0e0;
+    classDef process fill:#375a7f,stroke:#21364c,stroke-width:2px,color:#ffffff;
+    classDef final fill:#00bc8c,stroke:#007557,stroke-width:2px,color:#ffffff;
+    classDef db fill:#8e44ad,stroke:#5e3370,stroke-width:2px,color:#ffffff;
+
+    class A db;
+    class B,C,D,E,F,G,H,I process;
+    class J final;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<section id="synaptic-signaling-pathways" class="level3">
-<h3 class="anchored" data-anchor-id="synaptic-signaling-pathways">Synaptic Signaling Pathways</h3>
-<ul>
-<li><strong>Tools:</strong> Python, Ordinary Differential Equations (ODEs)</li>
-<li><strong>Description:</strong> Mathematical modeling of signaling pathways using ODEs, with a strong focus on computational neuroscience and systems biology approaches.</li>
-</ul>
+<section id="synaptic-plasticity-computational-neuroscience" class="level3">
+<h3 class="anchored" data-anchor-id="synaptic-plasticity-computational-neuroscience">Synaptic Plasticity &amp; Computational Neuroscience</h3>
+<p>Carried out at the Institut de Génomique Fonctionnelle (IGF), this project involved building a mathematical model simulating the interactions between signalling pathways involved in memory and learning (PKC, CaMKII, PKA). The core of the model relies on a system of ordinary differential equations (ODEs), optimised via <strong>Numba for simulations ~50x faster</strong> over long biological timescales, complemented by an interactive GUI to explore parameters in real time.</p>
+<p><strong>Tech Stack:</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">SciPy</span> <span class="badge bg-secondary">Numba</span> <span class="badge bg-secondary">IPywidgets</span></p>
+<p><a href="assets/RapportdeStage2025IGF.pdf" class="btn btn-primary btn-sm">📄 View Internship Report (PDF)</a></p>
+<hr>
+</section>
+<section id="sigmaview-automated-detection-of-dendritic-spines-in-3d-microscopy" class="level3">
+<h3 class="anchored" data-anchor-id="sigmaview-automated-detection-of-dendritic-spines-in-3d-microscopy">SigmaView: Automated Detection of Dendritic Spines in 3D Microscopy</h3>
+<p>Also developed during the IGF internship, SigmaView is a 3D confocal imaging analysis tool for the automated detection of nascent dendritic spines. In the absence of existing tools suited to the specific biological constraints of the project (signal-to-noise ratio, atypical morphology of forming spines), custom segmentation algorithms were designed from scratch.</p>
+<p><strong>Tech Stack:</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">3D Image Processing</span></p>
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_SIGMAVIEW" class="btn btn-secondary btn-sm">🐙 View Source Code on GitHub</a></p>
 </section>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<section id="game-prototyping-modding" class="level3">
-<h3 class="anchored" data-anchor-id="game-prototyping-modding">Game Prototyping &amp; Modding</h3>
-<ul>
-<li><strong>Tools:</strong> Godot Engine, Blockbench, Custom Scripts</li>
-<li><strong>Description:</strong> Development of game logic, physics engine management, and advanced mod creation. Projects include a custom cartomancy mod featuring complex projectile systems and 3D modeling.</li>
-</ul>
+<section id="o.r.c.a-cetacean-acoustic-recognition-via-deep-learning" class="level3">
+<h3 class="anchored" data-anchor-id="o.r.c.a-cetacean-acoustic-recognition-via-deep-learning">O.R.C.A: Cetacean Acoustic Recognition via Deep Learning</h3>
+<p>A project driven by a passion for marine bio-acoustics: training and deploying a convolutional neural network (CNN) for the automatic classification of cetacean vocalisations. Audio signals are transformed into mel-frequency spectrograms, which serve as input to the model for species identification. The full pipeline — from audio data collection to local inference — is self-contained and reproducible.</p>
+<p><strong>Tech Stack:</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Keras</span> <span class="badge bg-secondary">CNN</span></p>
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_ORCA" class="btn btn-secondary btn-sm">🐙 View Source Code on GitHub</a></p>
+<hr>
+</section>
+<section id="real-time-trading-application" class="level3">
+<h3 class="anchored" data-anchor-id="real-time-trading-application">Real-Time Trading Application</h3>
+<p>Development of a pseudo real-time visualisation application for US financial market data, built around a fully asynchronous architecture. This project explores continuous data stream management via WebSockets, synchronisation of multiple data sources, and the design of low-latency dynamic interfaces.</p>
+<p><strong>Tech Stack:</strong> <span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">WebSockets</span> <span class="badge bg-secondary">Asyncio</span></p>
+<p><a href="https://github.com/AlexandreGoss/TON_LIEN_GITHUB_TRADING" class="btn btn-secondary btn-sm">🐙 View Source Code on GitHub</a></p>
 </section>
 </div>
 </div>

@@ -1,1 +1,26 @@
 /* css styles */
+/* Activer le menu déroulant au survol (uniquement sur les écrans d'ordinateur) */
+@media all and (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Évite que le menu disparaisse quand la souris descend */
+  }
+}
+/* Effet de zoom sur les diagrammes Mermaid au survol */
+.mermaid {
+  overflow: visible !important; /* Permet au graphe de sortir de sa bordure */
+}
+
+.mermaid svg {
+  transition: transform 0.3s ease-in-out; /* Animation fluide */
+  transform-origin: center center; /* Le zoom part du centre */
+}
+
+.mermaid svg:hover {
+  transform: scale(1.4); /* Augmente la taille de 40% (tu peux tester 1.5 ou 1.6) */
+  z-index: 1000;
+  position: relative;
+  background-color: #222; /* Ajoute un fond sombre derrière le zoom pour la lisibilité */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8); /* Petite ombre pour détacher le graphe du fond */
+}
