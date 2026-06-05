@@ -26,7 +26,7 @@ prédiction phénotypique — une approche rarement implémentée dans la litté
 **Stack Technique :** [Snakemake]{.badge .bg-secondary} [SLURM]{.badge .bg-secondary} [GLIMPSE2]{.badge .bg-secondary} [GARGAMMEL]{.badge .bg-secondary} [XGBoost]{.badge .bg-secondary}
 
 <!-- [📄 Consulter le Rapport de Stage (PDF)](assets/RapportdeStage2026CAGT.pdf){.btn .btn-primary .btn-sm} -->
-[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TON_LIEN_GITHUB_APHENOVIEW){.btn .btn-secondary .btn-sm}
+[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/erc-anthrop-yxx-pipeline){.btn .btn-secondary .btn-sm}
 
 ```{mermaid}
 %%| column: screen-inset
@@ -117,6 +117,6 @@ dynamiques à faible latence.
 
 **Stack Technique :** [Python]{.badge .bg-secondary} [WebSockets]{.badge .bg-secondary} [Asyncio]{.badge .bg-secondary}
 
-[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TON_LIEN_GITHUB_TRADING){.btn .btn-secondary .btn-sm}
+[🐙 Voir le Code Source sur GitHub](https://github.com/AlexandreGoss/TradingApp){.btn .btn-secondary .btn-sm}
 
 :::

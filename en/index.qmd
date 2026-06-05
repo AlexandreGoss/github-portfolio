@@ -34,6 +34,11 @@ domains while bringing solid expertise in software engineering and data analysis
 Graduating at the end of 2026, I am open to opportunities as a Research Engineer, 
 fixed-term or permanent contract.
 
+
+<br>
+[View my Projects](projects.qmd){.btn .btn-primary .btn-lg}
+---
+
 ## Expertise & Technologies
 
 **Architecture & Reproducibility:** [Snakemake]{.badge .bg-secondary} [SLURM]{.badge .bg-secondary} [Git/GitHub]{.badge .bg-secondary} [Linux]{.badge .bg-secondary}

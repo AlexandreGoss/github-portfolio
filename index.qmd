@@ -35,6 +35,10 @@ solide en ingénierie logicielle et analyse de données.
 Diplômé en fin d'année 2026, je suis ouvert à des opportunités en CDI, CDD ou 
 poste d'Ingénieur d'Études.
 
+
+<br>
+
+[Découvrir mes Projets](projects.qmd){.btn .btn-primary .btn-lg}
 ---
 
 
